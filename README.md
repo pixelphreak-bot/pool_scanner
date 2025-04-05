@@ -2,19 +2,20 @@
   <img src="assets/logo-2.png" alt="PixelPhreak Logo" width="400"/>
 </p>
 
-# 🌐 PixelPhreak Pool Scanner
+<h1 align="center">PixelPhreak Pool Scanner</h1>
+
 
 ---
 
 ## 🔍 Overview
 
-**PixelPhreak Pool Scanner** is an automated Python tool that scans high-liquidity token pairs on the **Binance Smart Chain (BSC)**. It gathers data from **Dexscreener**, **BscScan**, and a **Chainstack** BSC node, enriches it with token and fee metadata, and stores it into a local SQLite database for analysis or use in DeFi strategies.
+**PixelPhreak Pool Scanner** is an automated Python tool that scans high-liquidity token pairs on the **Binance Smart Chain (BSC)**. It gathers data from **Dexscreener**, **BSCScan**, and a BSC node, enriches it with token and fee metadata, and stores it into a local SQLite database for analysis or use in DeFi strategies.
 
 ---
 
 ## 🛠️ Features
 
-- 🔎 Real-time scanning of token pools using Dexscreener API
+- 🔎 Real-time scanning of token pools using DexScreener API
 - 🧠 DEX version detection: **V2 or V3**
 - 💰 Dynamic or default swap fee extraction
 - 🧬 Symbol, address, and decimals detection via BSCScan
@@ -47,10 +48,10 @@ python-dotenv
 
 ## 🔐 .env Setup
 
-Create a `.env` file with your Chainstack and BSCScan credentials:
+Create a `.env` file with your BSC Node and BSCScan credentials. Script is set up to cycle to help avoid rate limits:
 
 ```dotenv
-BSC_RPC_URL=https://your-chainstack-node-url
+BSC_RPC_URL=https://your-bsc-node-url
 BSCSCAN_API_KEY=your-key-1
 BSCSCAN_API_KEY_2=your-key-2
 BSCSCAN_API_KEY_3=your-key-3
@@ -61,7 +62,7 @@ BSCSCAN_API_KEY_3=your-key-3
 ## 🚀 How to Use
 
 ```bash
-python add_token_pair_tool.py
+python pool_scanner.py
 ```
 
 Follow the CLI prompt:
