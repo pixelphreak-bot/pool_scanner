@@ -2,7 +2,7 @@
   <img src="assets/logo-2.png" alt="PixelPhreak Logo" width="400"/>
 </p>
 
-<h1 align="center">PixelPhreak Pool Scanner</h1>
+<h1 align="center">Pool Scanner</h1>
 
 
 ---
